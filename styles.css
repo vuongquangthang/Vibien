@@ -51,7 +51,7 @@ button, input, select { font: inherit; }
 .nav-cta span, .button span { margin-left: .8rem; font-size: 1.2em; }
 .menu-toggle { display: none; background: none; color: white; border: 0; }
 .hero { position: relative; min-height: 100svh; overflow: hidden; display: flex; align-items: center; color: var(--white); background: url("public/anh1.png") center / cover; }
-.hero-copy { position: relative; z-index: 2; width: min(100% - 12rem, 70rem); margin: 2rem auto 0; transform: translateY(-3rem); }
+.hero-copy { position: relative; z-index: 2; width: min(100% - 12rem, 70rem); margin: 2rem auto 0; transform: translateY(-5rem); }
 .eyebrow, .section-number { font-size: .65rem; font-weight: 700; letter-spacing: .2em; }
 .eyebrow { margin-bottom: 1.3rem; }
 h1, h2 { font-family: "Danh Da", sans-serif; font-weight: 700; margin: 0; line-height: 1.16; text-transform: uppercase; }
@@ -60,9 +60,9 @@ h1 {
   max-width: 64rem;
   font-family: "Danh Da", sans-serif;
   font-size: clamp(5rem, 8vw, 8rem);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: .01em;
-  line-height: 1.1;
+  line-height: 1.2;
   text-transform: uppercase;
   background: linear-gradient(180deg, #fff 8%, #f8fbfa 42%, #78c9d5 78%, #006e9e 100%);
   -webkit-background-clip: text;
