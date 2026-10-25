@@ -71,7 +71,9 @@ h1 {
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
-h1 em, h2 span { color: #b7e7e4; font-style: normal; }
+h1 em { color: #b7e7e4; font-style: normal; }
+h2 span { color: var(--blue); font-style: normal; }
+.section-blue h2 span { color: #b7e7e4; }
 .hero-intro { max-width: 39rem; margin: 1.2rem 0 2.5rem; font-size: 1.05rem; line-height: 1.5; color: rgba(255,255,255,.9); }
 .hero .eyebrow { color: #b7e7e4; }
 .proof-badge { width: fit-content; max-width: 31rem; margin: 1.4rem 0; padding: .7rem 1rem; border: 1px solid rgba(255,255,255,.45); border-radius: 999px; color: var(--white); background: rgba(0,55,85,.2); font-size: .7rem; }
