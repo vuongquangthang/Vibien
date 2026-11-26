@@ -83,6 +83,10 @@ h2 span { color: var(--blue); font-style: normal; }
 .button:hover { transform: translateY(-3px); }
 .button-light { color: var(--deep-blue); background: var(--white); }
 .button-outline { color: var(--white); border: 1px solid rgba(255,255,255,.85); background: rgba(0, 70, 104, .12); }
+.button-primary { color: var(--white); background: var(--deep-blue); }
+.button-primary:hover { background: var(--blue); }
+.button-outline-dark { color: var(--ink); border: 1px solid rgba(6,54,74,.4); background: transparent; }
+.button-outline-dark:hover { background: rgba(6,54,74,.06); }
 .hero-note { padding-left: 1.5rem; border-left: 1px solid var(--line); font-size: .58rem; line-height: 1.6; letter-spacing: .1em; text-transform: uppercase; }
 .hero-art { display: none; }
 .hero-art::before, .story-image::before, .craft-image::before { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0, 99, 138, .35), transparent 50%); mix-blend-mode: multiply; }
@@ -207,6 +211,21 @@ blockquote { margin: 1.5rem auto 1.8rem; color: var(--blue); font: clamp(2.2rem,
 .review-grid cite { display: block; margin-top: 1rem; color: #b7e7e4; font-size: .68rem; font-style: normal; }
 .trust-badges { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
 .trust-badges span { padding: .7rem .9rem; border: 1px solid var(--line); color: rgba(255,255,255,.8); font-size: .65rem; }
+
+/* 08 / GẮN KẾT YÊU THƯƠNG */
+.family-section { padding-top: 8rem; padding-bottom: 8rem; }
+.family-section .section-subtitle { max-width: 44rem; margin: 1.2rem auto 0; font-size: 1.05rem; line-height: 1.7; color: #55727b; text-align: center; }
+.family-showcase { display: flex; flex-direction: column; gap: 2.5rem; margin-top: 3.5rem; }
+.family-image-wrapper { position: relative; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 16px 45px rgba(6,54,74,.12); border: 1px solid rgba(6,54,74,.1); background: #f0f4f7; }
+.family-banner-img { display: block; width: 100%; height: auto; object-fit: cover; transition: transform .6s cubic-bezier(0.2, 0, 0, 1); }
+.family-image-wrapper:hover .family-banner-img { transform: scale(1.015); }
+.family-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+.family-card { padding: 2rem 1.6rem; background: var(--white); border: 1px solid rgba(6,54,74,.12); }
+.family-card-num { display: inline-block; color: var(--blue); font: 700 1.3rem var(--body); margin-bottom: .8rem; }
+.family-card h3 { margin: 0 0 .8rem; font-size: 1.35rem; color: var(--ink); }
+.family-card p { margin: 0; color: #55727b; font-size: .78rem; line-height: 1.8; }
+.family-cta-wrap { display: flex; align-items: center; justify-content: center; gap: 1.5rem; margin-top: .8rem; flex-wrap: wrap; }
+
 .combos { padding-top: 8rem; padding-bottom: 8rem; }
 .combo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
 .combo-card { padding: 2rem; background: #e9dfd0; }
@@ -357,7 +376,10 @@ blockquote { margin: 1.5rem auto 1.8rem; color: var(--blue); font: clamp(2.2rem,
   .craft-copy { display: block; }
   .process-list { margin-top: 3rem; }
   .craft-image { aspect-ratio: 1055 / 353; height: auto; }
-  .pain-points, .standards, .menu-section, .reviews, .combos, .faq { padding-top: 5rem; padding-bottom: 5rem; }
+  .pain-points, .standards, .menu-section, .reviews, .family-section, .combos, .faq { padding-top: 5rem; padding-bottom: 5rem; }
+  .family-cards-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .family-card { padding: 1.5rem; }
+  .family-cta-wrap { flex-direction: column; gap: .8rem; }
   .pain-grid, .usp-grid, .menu-grid, .review-grid, .combo-grid { grid-template-columns: 1fr; }
   .solution-line { align-items: flex-start; flex-direction: column; gap: .4rem; }
   .faq { display: block; }
