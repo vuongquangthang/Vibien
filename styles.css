@@ -36,8 +36,8 @@ button, input, select { font: inherit; }
 .site-header { position: fixed; z-index: 10; top: 1.05rem; left: 3.2%; width: 93.6%; min-height: 3.9rem; padding: .42rem 1.15rem .42rem 1.35rem; display: flex; align-items: center; gap: 1.5rem; color: #263d45; background: rgba(255,255,255,.97); border-radius: 999px; box-shadow: 0 5px 20px rgba(0, 40, 60, .08); transition: .3s; }
 .site-header.scrolled { top: .5rem; background: rgba(255,255,255,.97); padding-top: .42rem; padding-bottom: .42rem; backdrop-filter: blur(12px); }
 .brand { display: inline-flex; align-items: center; gap: .5rem; flex-shrink: 0; }
-.brand-logo-circle { position: relative; width: 2.7rem; height: 2.7rem; flex-shrink: 0; overflow: hidden; border-radius: 50%; background: var(--cream); }
-.brand-logo-circle .brand-logo { position: absolute; top: -30%; left: -80%; width: 260%; max-width: none; height: auto; }
+.brand-logo-circle { position: relative; width: 2.9rem; height: 2.9rem; flex-shrink: 0; overflow: hidden; border-radius: 50%; background: #041d3a; }
+.brand-logo-circle .brand-logo { position: absolute; top: 50%; left: 50%; width: 126%; max-width: none; height: auto; transform: translate(-48%, -44%); }
 .brand-logo { display: block; }
 .brand-mark { width: 2rem; height: 2rem; display: grid; place-items: center; color: #173e4a; border: 0; font-size: 1.65rem; line-height: 1; transform: rotate(-12deg); }
 .brand-copy { display: grid; line-height: 1; }
@@ -146,9 +146,9 @@ h2 { font-size: clamp(3.4rem, 7vw, 6.5rem); letter-spacing: -.03em; line-height:
 .product-image { height: 25rem; background-position: center; background-size: cover; filter: saturate(.8); }
 .product-view-trigger { display: block; width: 100%; padding: 0; border: 0; cursor: pointer; }
 .product-view-trigger:hover { filter: saturate(1); }
-.product-image-1 { background-image: url("public/ruoc_tom.png"); }
-.product-image-2 { background-image: url("public/ruoc_hau.png"); }
-.product-image-3 { background-image: url("public/ruoc_bebe.png"); }
+.product-image-1 { background-image: url("public/ruoc_casong.png"); }
+.product-image-2 { background-image: url("public/ruoc_casong.png"); }
+.product-image-3 { background-image: url("public/ruoc_casong.png"); }
 .product-image-4 { background-image: url("public/ruoc_casong.png"); }
 .product-info { padding: 1.2rem .4rem 3.5rem; }
 .product-index { color: var(--blue); font: .72rem var(--body); }
@@ -212,7 +212,7 @@ blockquote { margin: 1.5rem auto 1.8rem; color: var(--blue); font: clamp(2.2rem,
 .trust-badges { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
 .trust-badges span { padding: .7rem .9rem; border: 1px solid var(--line); color: rgba(255,255,255,.8); font-size: .65rem; }
 
-/* 08 / GẮN KẾT YÊU THƯƠNG */
+/* 01 / GẮN KẾT YÊU THƯƠNG */
 .family-section { padding-top: 8rem; padding-bottom: 8rem; }
 .family-section .section-subtitle { max-width: 44rem; margin: 1.2rem auto 0; font-size: 1.05rem; line-height: 1.7; color: #55727b; text-align: center; }
 .family-showcase { display: flex; flex-direction: column; gap: 2.5rem; margin-top: 3.5rem; }
